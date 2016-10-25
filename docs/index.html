@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DViewer Sample</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>DViewer Sample!</h1>
+            <p>This is a Javascript/jQuery library that allows you to enable document/images visualization by setting the background of the image and changing the position/scale based on user interaction.</p>
+            <p>Follow the steps below to integrate it into your own webpage!</p>
+        </div>
+        <div class='well'>
+            <h4>Steps</h4>
+            <p>Call the constructor with the id of the object that will receive the background. Such as a canvas. And the buttons that will interact with it.</p>
+            <div class="well"><code>var Visualizador = new DViewer("#image", "#btnPlus", "#btnLess", "#btn100", "img1.jpg");</code></div>
+            <p>Set the height using 0-100 integer values meaning the percentage of it.</p>
+            <div class="well"><code>Visualizador.setHeight(50);</code></div>
+            <p>If you need to change the image, use: <p>
+            <div class="well"><code>Visualizador.changeImage("img2.jpg");</code></div>
+            <button id="changeImg" type="button" class="btn btn-default">Change Image</button>
+        </div>
+        <div id="image" class="col-md-6 well">
+        </div>
+        <div class="col-md-6">
+            <button id="btnPlus" type="button" class="btn btn-default">+</button>
+            <button id="btnLess" type="button" class="btn btn-default">-</button>
+            <button id="btn100" type="button" class="btn btn-default">100%</button>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.min.js"></script>
+    <script src="dviewer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
