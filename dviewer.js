@@ -2,7 +2,7 @@
 class DViewer {
     /** *
     * Creates the object
-    @constructor
+    * @constructor
     * @param {selector} canvas - the DOM object that will display the image
     * @param {selector} btnPlus - the DOM object that will increase the image size
     * @param {selector} btnLess - the DOM object that will decrease the image size
