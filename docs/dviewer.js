@@ -1,4 +1,4 @@
-/** DViewer is a photo visualizer class that uses css background as a canvas. */
+;/** DViewer is a photo visualizer class that uses css background as a canvas. */
 class DViewer {
     /** *
     * Creates the object
